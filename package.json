@@ -11,7 +11,7 @@
     "nodemon": "^2.0.7",
     "path": "^0.12.7"
   },
-  "name": "mental-health-app",
+  "name": "mood-aid",
   "version": "1.0.0",
   "main": "index.js",
   "engines": {
