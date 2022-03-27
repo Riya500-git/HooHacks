@@ -1,0 +1,52 @@
+input:focus:invalid {
+    border: 2px solid rgb(223, 67, 67);
+}
+
+input:valid {
+border: 2px solid rgb(104, 104, 104);
+}
+  
+.jombotron {
+    background-color:mintcream ;
+}
+
+.alltabs {
+    background-repeat: no-repeat;
+    opacity: 80%;
+    background-size: cover;
+    min-height: 25rem;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+
+.individualstab {
+    background-image:     linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ), url('/images/indiv.jpg');
+
+
+}
+
+.communitypartnerstab {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ),url('/images/Communities.jpg');
+
+}
+
+.statstab {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ),url('/images/stats.jpg');
+}
+
+.tabtext span{
+background-color: rgba(235, 240, 245, 0.7);
+border-radius: 6px;
+font-size: 4em;
+color: black;
+}

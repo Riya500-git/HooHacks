@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!-- <meta name="author" content="Riya, Bahar Sarlak, Harsh Mange"> -->
+    <meta name="generator" content="Hugo 0.84.0">
+    <title> ---- </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class=" px-auto">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/home.html">MoodAid</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/todaysmood.html">Individuals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/stats.html">Stats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup.html">Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!--please fill the action attribute value -->
+            <div class="col-11 col-lg-8 mx-auto my-4">
+                <form class="needs-validation" method="post" action="/api/reports">
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="moodrate" class="form-label">On a scale of 1 to 12, describe your day</label>
+                            <select class="form-select" name="moodrate" id="moodrate" required>
+                                <option value="">Choose...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="10">11</option>
+                                <option value="10">12</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 form-check px-0">
+                            <div class="col">
+                                <p>What would make you feel better today?</p>
+                            </div>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <div>
+                                    <input class="form-check-input mx-1" name="autdoor" type="checkbox" value="outdoor" id="outdoor">
+                                    <label class="form-check-label" for="outdoor">
+                                      Outdoor Activities
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input mx-1" name="music" type="checkbox" value="music" id="music">
+                                    <label class="form-check-label" for="music">
+                                      Listening to Music
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input mx-1" name="meeting" type="checkbox" value="meeting" id="meeting">
+                                    <label class="form-check-label" for="meeting">
+                                      Meetings & Talking to People
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input mx-1" name="cooking" type="checkbox" value="cooking" id="cooking">
+                                    <label class="form-check-label" for="cooking">
+                                      Cooking and Baking
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input mx-1" name="game" type="checkbox" value="game" id="game">
+                                    <label class="form-check-label" for="game">
+                                      Playing Games
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input mx-1" name="charity" type="checkbox" value="charity" id="charity">
+                                    <label class="form-check-label" for="charity">
+                                      Volunteering and Charity Events 
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input mx-1" name="pets" type="checkbox" value="pets" id="pets">
+                                    <label class="form-check-label" for="pets">
+                                      Being Around Pets! 
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button class=" my-4 w-50 btn btn-primary btn-lg" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+<!-- app name? -->
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2022 MoodAid</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+                <li class="list-inline-item"><a href="https://www.vecteezy.com">Vectors from Veetzy</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
