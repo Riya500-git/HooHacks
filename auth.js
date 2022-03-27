@@ -108,7 +108,7 @@ router.post("/login", (req, res) => {
 
         const { password, ...others } = user._doc;
 
-        user  && res.cookie('username', others.username).sendFile(__dirname + '/public/todaysmood.html');
+        user  && res.cookie('username', others.username).sendFile(__dirname + '/public/index.html');
       }).catch(err => console.log(err));
     }).catch(err => console.log(err));
 });

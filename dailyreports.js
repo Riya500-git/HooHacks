@@ -36,7 +36,7 @@ router.post("/", async (req, res) => {
   });
   try {
     const savedDailyReport = await newDailyReport.save();
-    res.status(200).json(savedDailyReport);
+    res.status(200).sendFile(__dirname + '/public/index.html');
   } catch (err) {
     res.status(500).json(err);
   }

@@ -21,6 +21,8 @@
 <body class="bg-light">
 
     <div class=" px-auto">
+
+<!-- change application name !! -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/home.html">MoodAid</a>
@@ -36,40 +38,38 @@
                             <a class="nav-link" href="/todaysmood.html">Individuals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/stats.html">Stats</a>
+                            <a class="nav-link active" href="/stats.html">Stats</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Login/Register</a>
+                            <a class="nav-link" href="/signup.html">Login/Register</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+
         <main>
-            <div class="py-5 text-center jombotron">
-                <h2>Existing User</h2>
-                <p class="lead">Sign in to use app features</p>
+            <div class="row">
+                <div class=" mt-5 mx-auto col-8">
+                    <h4 class="text-center">Your Mood Today: <span class="usermoodtodaynum text-center">5</span> / 12</h4>
+                </div>
+                <div class="mx-auto my-5 moodchart px-0 py-0 col-8 bg-white">
+                    <div class="usermoodtodaychart mx-0 py-3 col-5 my-0 bg-success">
+                    </div>
+                </div>
+                <div class=" statspage"></div>
+                <div class="my-4 mx-auto col-8 text-center">
+                    <h3 class="mb-3">These make you feel better today:</h3>
+                    <ul class="feelbetteritems">
+                        <li class="feelbetteritem">Outdoor Activities</li>
+                    </ul>
+                </div>
             </div>
-
-            <!--please fill the action attribute value -->
-            <div class="col-11 col-sm-10 col-md-8 mx-auto my-4">
-                <!-- good to have an image at the right side of the page, or something similar to fill the page -->
-                <form method="post" action="/api/auth/login">
-                        <div class="col-sm-6">
-                            <label for="email" class="form-label fs-5">Email</label>
-                                <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
-                        </div>
-
-                        <div class="col-sm-6  mt-3">
-                            <label for="password" class="form-label fs-5">Password</label>
-                                <input type="text" class="form-control" name="password" id="password" placeholder="Password" required>
-                        </div>
-
-                    <button class=" my-4 btn btn-primary btn-lg" type="submit">Submit</button>
-                </form>
-            </div>
+            
+            
         </main>
-<!-- app name? -->
+        <!-- app name? -->
         <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; 2022 MoodAid</p>
             <ul class="list-inline">
